@@ -1,0 +1,70 @@
+# Operadores lógicos
+# and (e) or (ou) not (não)
+# and - Todas as condições precisam ser
+# verdadeiras.
+# Se qualquer valor for considerado falso,
+# a expressão inteira será avaliada naquele valor
+# São considerados falsy (que vc já viu)
+# 0 0.0 '' False
+# Também existe o tipo None que é
+# usado para representar um não valor
+
+##########################
+# PRIMEIRA PARTE DA AULA #
+##########################
+
+'''
+entrada = input('[E]ntrar [S]air:')
+senha_digitada = input('Senha:')
+print(entrada)
+
+senha_permitida = '123456'
+#if True:
+#...
+if entrada == 'E' and senha_digitada == senha_permitida:
+    print('Entrar')
+else:
+    print('Sair')
+'''
+
+#########################
+# SEGUNDA PARTE DA AULA #
+#########################
+
+'''
+#Avaliação de curto circuito
+# Se qualquer valor for considerado falso,
+# a expressão inteira será avaliada naquele valor
+print(True and True and False and True)
+print(True and 0 and True) #Irá parar no 0 pois é falso.
+'''
+
+##########################
+# TERCEIRA PARTE DA AULA #
+##########################
+
+# or - Qualquer condição verdadeira avalia
+# toda a expressão como verdadeira.
+# Se qualquer valor for considerado verdadeiro,
+# a expressão inteira será avaliada naquele valor.
+
+'''
+entrada = input('[E]ntrar [S]air:')
+senha_digitada = input('Senha:')
+
+senha_permitida = '123456'
+
+if (entrada == 'E'or entrada == 'e') and senha_digitada == senha_permitida:
+    print('Entrar')
+else:
+    print('Sair')
+'''
+
+##########################
+#  QUARTA PARTE DA AULA  # 
+##########################
+
+# Avaliação de curto circuito
+senha = input('Senha: ') or 'Sem senha'
+print(senha)
+
